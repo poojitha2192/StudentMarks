@@ -28,7 +28,7 @@ public class StudensController {
 		return studentRepository.findById(id);
 	}
 
-	@GetMapping("/getStudentById/{id}/{marks}")
+	@GetMapping("/updateStudentById/{id}/{marks}")
 	public Student getAllStudentByIdAndMarks(@PathVariable Long id, @PathVariable Long marks) {
 		Student student = studentRepository.findById(id).orElse(null);
 
